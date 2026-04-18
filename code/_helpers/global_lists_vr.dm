@@ -1299,8 +1299,8 @@ GLOBAL_LIST_INIT(area_or_turf_fail_types, typecacheof(list(
 	/obj/item/organ/external, \
 	/obj/item/organ/internal/brain, \
 	/obj/item/organ/internal/cell, \
-	/obj/item/organ/internal/eyes/robot, \
-	/obj/item/nif
+	/obj/item/organ/internal/eyes/robot,
+// /obj/item/nif PY edit - Nif removal
 
 #define EXOSUIT_GRIPPER \
 	/obj/item/mecha_parts/part, \

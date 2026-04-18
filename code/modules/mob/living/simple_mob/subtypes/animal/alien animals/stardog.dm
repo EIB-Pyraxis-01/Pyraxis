@@ -654,7 +654,7 @@
 	var/list/valid_treasure = list(
 		/obj/item/cell/infinite = 5,
 		/obj/item/cell/device/weapon/recharge/alien = 5,
-		/obj/item/nif/authentic = 1,
+	//	/obj/item/nif/authentic = 1, PY edit - Nif removal
 		/obj/item/toy/bosunwhistle = 50,
 		/obj/random/mouseray = 50,
 		/obj/item/gun/energy/mouseray/metamorphosis/advanced/random = 10,
