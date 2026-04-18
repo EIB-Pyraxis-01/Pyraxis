@@ -1516,7 +1516,7 @@
 				if(istype(W, /obj/item/organ/internal/mmi_holder/posibrain))
 					var/obj/item/organ/internal/mmi_holder/MMI = W
 					MMI.removed()
-				if(istype(W, /obj/item/implant/backup) || istype(W, /obj/item/nif) || istype(W, /obj/item/organ))
+				if(istype(W, /obj/item/implant/backup) /* || istype(W, /obj/item/nif) PY edit - Nif removal */ || istype(W, /obj/item/organ))
 					continue
 				H.drop_from_inventory(W)
 			if(linked_mob)

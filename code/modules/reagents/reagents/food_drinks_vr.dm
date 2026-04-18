@@ -872,12 +872,14 @@
 	..()
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
+		/* PY edit - Nif removal
 		if(H.nif)
 			var/obj/item/nif/nif = H.nif //L o c a l
 			if(nif.stat == NIF_TEMPFAIL)
 				nif.stat = NIF_INSTALLING
 			nif.repair(removed)
-		else if(prob(5))
+		else */
+		if(prob(5))
 			M.SetConfused(max(M.confused, 20))
 			M.emote(pick("shudders", "seems lost", "blanks for a moment"))
 	M.adjust_nutrition(4 * removed)
