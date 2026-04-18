@@ -182,7 +182,7 @@ Due to the small chemical capacity of the implant, the life of the implant is re
 	icon_state = "implant_evil"
 	var/active = TRUE
 	var/laws = "CHANGE BEFORE IMPLANTATION"
-	var/nif_payload = /datum/nifsoft/compliance
+//	var/nif_payload = /datum/nifsoft/compliance PY edit - Nif removal
 
 /obj/item/implant/compliance/get_data()
 	var/dat = {"

@@ -871,8 +871,8 @@
 /datum/reagent/drink/coffee/nukie/mega/shock/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
 	if(ishuman(M))
-		var/mob/living/carbon/human/H = M
 		/* PY edit - Nif removal
+		var/mob/living/carbon/human/H = M
 		if(H.nif)
 			var/obj/item/nif/nif = H.nif //L o c a l
 			if(nif.stat == NIF_TEMPFAIL)
