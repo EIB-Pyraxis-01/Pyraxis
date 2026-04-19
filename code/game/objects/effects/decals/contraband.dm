@@ -264,6 +264,7 @@
 		/obj/item/card/emag_broken,
 		/obj/item/sleevemate,
 	//	/obj/item/disk/nifsoft/compliance, PY edit - Nif removal
+		/obj/item/implanter/compliance, // PY edit - Implanter instead
 		/obj/item/seeds/ambrosiadeusseed,
 		/obj/item/seeds/ambrosiavulgarisseed,
 		/obj/item/bodysnatcher)

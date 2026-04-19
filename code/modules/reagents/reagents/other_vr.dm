@@ -34,6 +34,7 @@
 					BI.forceMove(torso)
 					torso.implants += BI
 
+/* PY edit - Nif removal
 /datum/reagent/nif_repair_nanites
 	name = REAGENT_NIFREPAIRNANITES
 	id = REAGENT_ID_NIFREPAIRNANITES
@@ -48,7 +49,6 @@
 	supply_conversion_value = REFINERYEXPORT_VALUE_RARE
 	industrial_use = REFINERYEXPORT_REASON_MATSCI
 
-/* PY edit - Nif removal
 /datum/reagent/nif_repair_nanites/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
