@@ -4451,6 +4451,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/stellardelight/deck2/o2production)
 "jt" = (
+/obj/machinery/vending/nifsoft_shop,
 /obj/effect/floor_decal/steeldecal/steel_decals5{
 	dir = 1
 	},
@@ -9202,6 +9203,11 @@
 /turf/simulated/floor/tiled,
 /area/stellardelight/deck2/port)
 "tV" = (
+/obj/item/storage/box/nifsofts_medical{
+	pixel_x = 7;
+	pixel_y = 7
+	},
+/obj/item/storage/box/nifsofts_medical,
 /obj/structure/table/reinforced,
 /obj/item/radio{
 	pixel_x = -4;
@@ -14264,6 +14270,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/vending/nifsoft_shop,
 /obj/machinery/item_bank{
 	pixel_y = 28
 	},
@@ -16962,6 +16969,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
+/obj/item/storage/box/nifsofts_engineering,
 /turf/simulated/floor/tiled/eris/dark/orangecorner,
 /area/engineering/workshop)
 "Lu" = (
@@ -18307,6 +18315,7 @@
 /obj/random/maintenance/medical,
 /obj/random/maintenance/engineering,
 /obj/random/maintenance,
+/obj/item/disk/nifsoft/compliance,
 /obj/random/drinkbottle,
 /turf/simulated/floor,
 /area/maintenance/stellardelight/deck2/starboardfore)
@@ -18859,6 +18868,7 @@
 /area/maintenance/stellardelight/deck2/portsolars)
 "Py" = (
 /obj/machinery/alarm/angled,
+/obj/machinery/vending/nifsoft_shop,
 /obj/effect/floor_decal/steeldecal/steel_decals5{
 	dir = 1
 	},

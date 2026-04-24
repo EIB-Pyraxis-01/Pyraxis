@@ -461,6 +461,7 @@
 /turf/simulated/wall/bay/r_wall/steel,
 /area/security/security_equiptment_storage)
 "aT" = (
+/obj/item/storage/box/nifsofts_mining,
 /obj/structure/table/reinforced,
 /obj/item/personal_shield_generator/belt/mining/loaded,
 /turf/simulated/floor/tiled/eris/steel/cargo,
@@ -5074,6 +5075,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
+/obj/machinery/vending/nifsoft_shop,
 /turf/simulated/floor/tiled/techfloor,
 /area/stellardelight/deck1/port)
 "jK" = (
@@ -6504,6 +6506,7 @@
 /area/stellardelight/deck1/lowermed)
 "mK" = (
 /obj/structure/table/sifwooden_reinforced,
+/obj/item/storage/box/nifsofts_pilot,
 /turf/simulated/floor/tiled/eris/steel/panels,
 /area/stellardelight/deck1/pilot)
 "mL" = (
@@ -10824,6 +10827,7 @@
 /area/assembly/robotics)
 "we" = (
 /obj/structure/table/steel,
+/obj/item/storage/box/nifsofts_security,
 /obj/item/hand_labeler,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -11431,6 +11435,7 @@
 /obj/random/maintenance,
 /obj/random/maintenance/cargo,
 /obj/random/maintenance/clean,
+/obj/item/disk/nifsoft/compliance,
 /turf/simulated/floor,
 /area/maintenance/stellardelight/deck1/exploration)
 "xx" = (
@@ -16129,6 +16134,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main)
 "HL" = (
+/obj/machinery/vending/nifsoft_shop,
 /turf/simulated/floor/tiled/techfloor,
 /area/stellardelight/deck1/starboard)
 "HM" = (
