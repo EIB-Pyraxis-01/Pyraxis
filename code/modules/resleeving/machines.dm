@@ -154,6 +154,10 @@
 	RefreshParts()
 	update_icon()
 
+/obj/machinery/transhuman/synthprinter/Destroy()
+	current_br = null
+	. = ..()
+
 /obj/machinery/transhuman/synthprinter/RefreshParts()
 
 	//Scanning modules reduce burn rating by 15 each
@@ -314,6 +318,10 @@
 	component_parts += new /obj/item/stack/cable_coil(src, 2)
 	RefreshParts()
 	update_icon()
+
+/obj/machinery/transhuman/resleever/Destroy()
+	. = ..()
+
 
 /obj/machinery/transhuman/resleever/proc/set_occupant(var/mob/living/carbon/human/H)
 	SHOULD_NOT_OVERRIDE(TRUE)
@@ -514,7 +522,7 @@
 	playsound(src, 'sound/machines/medbayscanner1.ogg', 100, 1) // Play our sound at the end of the mind injection!
 	return 1
 
-/obj/machinery/transhuman/resleever/proc/go_out(var/mob/M)
+/obj/machinery/transhuman/resleever/proc/go_out()
 	var/mob/living/carbon/human/occupant = get_occupant()
 	if(!occupant)
 		return
@@ -543,7 +551,7 @@
 	set src in oview(1)
 	if(usr.stat != 0)
 		return
-	src.go_out(usr)
+	go_out()
 	add_fingerprint(usr)
 	return
 
