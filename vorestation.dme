@@ -5054,4 +5054,6 @@
 #include "modular_pyraxis\code\game\jobs\job\engineering.dm"
 #include "modular_pyraxis\code\game\jobs\job\science.dm"
 #include "modular_pyraxis\maps\_map_system_readme.dm"
+#include "modular_pyraxis\maps\~map_system\_map_selection.dm"
+#include "modular_pyraxis\maps\~map_system\maps.dm"
 // END_INCLUDE
