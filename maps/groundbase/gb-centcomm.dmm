@@ -7792,15 +7792,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/centcom/security)
-"Au" = (
-/obj/effect/floor_decal/borderfloorwhite{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/green/border{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/white,
-/area/centcom/medical)
 "Aw" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 5
@@ -12068,6 +12059,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom/security)
+"OG" = (
+/obj/effect/floor_decal/borderfloorwhite{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/green/border{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/centcom/medical)
 "OH" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 4
@@ -24912,7 +24912,7 @@ ZX
 bR
 bR
 wY
-Au
+OG
 qX
 qX
 qX
@@ -25196,7 +25196,7 @@ ZX
 bR
 bR
 wY
-Au
+OG
 dh
 aH
 Iw

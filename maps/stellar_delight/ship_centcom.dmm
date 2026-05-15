@@ -5993,7 +5993,7 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/centcom/medical)
-"yZ" = (
+"yY" = (
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 1
 	},
@@ -24950,7 +24950,7 @@ al
 ZQ
 ZQ
 aw
-yZ
+yY
 QT
 QT
 QT
@@ -25234,7 +25234,7 @@ al
 ZQ
 ZQ
 aw
-yZ
+yY
 lS
 Ib
 DH
