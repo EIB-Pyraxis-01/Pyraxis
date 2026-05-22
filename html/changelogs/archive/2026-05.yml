@@ -100,3 +100,29 @@
       used on their first tick if the pipe network is in a certain state
   - code_imp: gas mixture datum inits temp to TCMB instead of 0
   - bugfix: shuttles and elevators are ignored by the cryoplanets subsystem
+2026-05-22:
+  Diana:
+  - bugfix: Fixes clicking carbons with tongue to properly lick.
+  - rscadd: Inflation. You can now view how much your supply points are worth in thalers!
+  - rscadd: You can now sell food, mechs, slime cores, and bombs.
+  - rscadd: Adds a cargo scanner item that tells you how much the item you're scanning
+      is worth!
+  - bugfix: Bombs will no longer to into negative integrity.
+  - bugfix: Bomb simulator now gives sane numbers.
+  - bugfix: You can no longer Fulton into Central Command
+  Guti:
+  - rscadd: Added the vow of silence.
+  - rscadd: Added mime backpacks
+  - rscadd: Added mimery abilities to mimes. Invisible wall, invisible chair, and
+      invisible box.
+  - rscadd: Added the mime stamp
+  - rscadd: Mimes now start with a bottle of nothing in their loadout
+  - rscadd: Mimes drink a small amount of brute/burn when drinking Nothing.
+  - rscadd: Added mime-specific lines for emotes
+  - qol: Mimes won't do (most) sounds when emoting
+  - qol: Mimes don't have to pick the Mute trait anymore, as they spawn with a vow
+      of silence.
+  Will:
+  - bugfix: Station boiler radiators respect boiler fuel
+  - image: merged downstream _yw dmis into main dmi files
+  - code_imp: Upports borealis majoris planet to virgo
