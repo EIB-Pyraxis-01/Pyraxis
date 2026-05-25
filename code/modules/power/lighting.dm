@@ -339,7 +339,10 @@ GLOBAL_LIST_EMPTY(light_type_cache)
 		if(prob(L.broken_chance))
 			broken(1)
 
-	SSrem.add_activity(DEPARTMENT_ENGINEERING, 2)
+	// PY Edit Start - REM
+	if(!mapload)
+		SSrem.add_activity(DEPARTMENT_ENGINEERING, 2)
+	// PY Edit End - REM
 	on = powered()
 	update(0)
 

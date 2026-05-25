@@ -49,6 +49,8 @@
 	 */
 	var/list/announce_channels
 
+	var/dangerous = 0 // PY Add - If this research is dangerous, add score to SSRem
+
 /datum/techweb_node/error_node
 	id = "ERROR"
 	display_name = "ERROR"
@@ -117,7 +119,6 @@
 ///Proc called when the Station (Science techweb specific) researches a node.
 /datum/techweb_node/proc/on_station_research(atom/research_source)
 	SHOULD_CALL_PARENT(TRUE)
-	SSrem.add_activity(DEPARTMENT_RESEARCH, 5) // PY Edit - Science makes REM go crazy
 	// var/channels_to_use = announce_channels
 	// if(length(channels_to_use) && !starting_node)
 	// 	for(var/channel in channels_to_use)

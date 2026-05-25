@@ -207,6 +207,7 @@
 		. = isolate_symptom(user, target, target_disease)
 	else
 		. = isolate_disease(user, target, target_disease)
+	SSrem.add_activity(DEPARTMENT_MEDICAL, 5) // PY Edit - REM
 	using = FALSE
 
 /obj/item/extrapolator/proc/isolate_symptom(mob/living/user, atom/target, datum/disease/advance/target_disease)

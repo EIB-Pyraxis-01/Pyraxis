@@ -20,8 +20,8 @@
 
 	var/obj/machinery/door/airlock/the_door = pick(doors)
 
-	if(!is_here || the_door)
+	if(!is_here || !the_door)
 		return
 
-	new /mob/living/simple_mob/vore/horse(get_turf(the_door))
+	new /mob/living/simple_mob/vore/horse/big(get_turf(the_door))
 	the_door.open()

@@ -41,6 +41,8 @@ SUBSYSTEM_DEF(rem)
 		DEPARTMENT_CIVILIAN = 0
 	)
 
+	var/last_event
+
 /datum/controller/subsystem/rem/Initialize()
 	for(var/path in subtypesof(/datum/rem_event))
 		all_events += new path
@@ -101,9 +103,9 @@ SUBSYSTEM_DEF(rem)
 
 	switch(mode)
 		if(REM_CALM)
-			delay *= 1.5
+			delay *= 1
 		if(REM_IRREGULAR)
-			delay *= 1.2
+			delay *= 1
 		if(REM_TENSION_RISING)
 			delay *= 1
 		if(REM_VOLATILE)
@@ -163,14 +165,7 @@ SUBSYSTEM_DEF(rem)
     if(total <= 0)
         return FALSE
 
-    var/roll = rand(0, total)
-
-    for(var/datum/rem_event/E in weights)
-        roll -= weights[E]
-        if(roll <= 0)
-            return E
-
-    return FALSE
+    return pickweight(weights)
 
 /datum/controller/subsystem/rem/proc/get_effective_activity(dept)
     return department_activity[dept] + department_permanent_activity[dept]
@@ -181,11 +176,8 @@ SUBSYSTEM_DEF(rem)
 	if(!E)
 		return FALSE
 
-	// Higher chance for things to not happen, give more time between big events
-	if(prob(5 * mode))
-		return FALSE
-
-	var/datum/event_meta/meta
+	var/datum/event_meta/meta = new
 	meta.severity = floor(mode/2)
 	new E.event_path(meta)
+	last_event = E.type
 	return TRUE
