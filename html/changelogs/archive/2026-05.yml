@@ -165,3 +165,8 @@
   - rscadd: Pipe connected gas meters can no be built on each pipe layer (fuel, aux,
       scrubber, etc)
   - qol: Pipe connected gas meters can be examined from further away
+2026-05-26:
+  SabreKnight:
+  - bugfix: TEG tgui crash when unlinked
+  Will:
+  - bugfix: multiple universal pipe connections properly init during map loading
