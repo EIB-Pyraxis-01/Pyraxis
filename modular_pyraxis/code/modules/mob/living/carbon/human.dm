@@ -12,7 +12,7 @@
 	adjustHalLoss(50)
 	clear_jittery()
 	take_overall_damage(20, used_weapon = "own bones")
-	var/datum/trait/negative/boneless/nobones = new
+	var/datum/trait/negative/boneless/nobones = new(src)
 	nobones.apply(species, src)
 
 	var/mob/living/simple_mob/vore/alienanimals/skeleton/fleeing/skeleton = new(get_turf(src))

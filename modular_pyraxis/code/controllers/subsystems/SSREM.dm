@@ -103,9 +103,9 @@ SUBSYSTEM_DEF(rem)
 
 	switch(mode)
 		if(REM_CALM)
-			delay *= 1
+			delay *= 0.5
 		if(REM_IRREGULAR)
-			delay *= 1
+			delay *= 0.75
 		if(REM_TENSION_RISING)
 			delay *= 1
 		if(REM_VOLATILE)

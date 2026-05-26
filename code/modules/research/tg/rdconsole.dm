@@ -108,7 +108,7 @@ Nothing else in the console has ID requirements.
 	var/list/price = TN.get_price(stored_research)
 	if(stored_research.can_afford(price))
 		// PY Edit Start - REM
-		SSrem.add_activity(DEPARTMENT_RESEARCH, 5)
+		SSrem.add_activity(DEPARTMENT_RESEARCH, TN.activity)
 		if(TN.dangerous)
 			SSrem.add_permanent_activity(DEPARTMENT_RESEARCH, TN.dangerous)
 		// PY Edit End

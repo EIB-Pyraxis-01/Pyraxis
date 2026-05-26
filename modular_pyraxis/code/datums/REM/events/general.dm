@@ -9,3 +9,9 @@
 	max_mode = REM_ANOMALOUS
 	event_path = /datum/event/horse
 	extra_value = 5
+
+/datum/rem_event/bluespace_locker
+	min_mode = REM_IRREGULAR
+	max_mode = REM_ANOMALOUS
+	event_path = /datum/event/bluespace_locker
+	extra_value = 5

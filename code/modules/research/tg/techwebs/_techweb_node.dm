@@ -50,6 +50,7 @@
 	var/list/announce_channels
 
 	var/dangerous = 0 // PY Add - If this research is dangerous, add score to SSRem
+	var/activity = 5 // PY Add - How much department activity does node this add
 
 /datum/techweb_node/error_node
 	id = "ERROR"

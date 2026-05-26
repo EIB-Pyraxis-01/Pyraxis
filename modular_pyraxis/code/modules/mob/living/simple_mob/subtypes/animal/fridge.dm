@@ -4,6 +4,7 @@
 	icon = 'icons/obj/closets/fridge.dmi'
 	icon_state = "closed_locked"
 	ai_holder_type = /datum/ai_holder/simple_mob/melee/hit_and_run/runner
+	move_speed = 5
 
 /mob/living/simple_mob/fridge/death()
 	. = ..()
@@ -11,7 +12,7 @@
 		freezer.forceMove(get_turf(src))
 	qdel(src)
 
-/obj/structure/closet/secure_closet/freezer/meat/proc/make_alive()
+/obj/structure/closet/secure_closet/freezer/proc/make_alive()
 	var/mob/living/simple_mob/fridge/alive_fridge = new(get_turf(src))
 	forceMove(alive_fridge)
 	return

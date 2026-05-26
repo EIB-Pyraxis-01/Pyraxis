@@ -5070,6 +5070,7 @@
 #include "modular_pyraxis\code\game\jobs\job\engineering.dm"
 #include "modular_pyraxis\code\game\jobs\job\science.dm"
 #include "modular_pyraxis\code\game\machinery\deployable.dm"
+#include "modular_pyraxis\code\game\objects\effects\landmarks.dm"
 #include "modular_pyraxis\code\game\objects\items\weapons\storage\boxes.dm"
 #include "modular_pyraxis\code\modules\events\bluespacelocker.dm"
 #include "modular_pyraxis\code\modules\events\event_container.dm"
