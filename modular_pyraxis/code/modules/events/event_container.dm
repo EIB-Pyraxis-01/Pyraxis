@@ -43,13 +43,13 @@
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Jellyfish School",			/datum/event/jellyfish_migration,		2,		null, TRUE),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Space Vines",				/datum/event/spacevine, 				3,		null, FALSE),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Atmos Leak",				/datum/event/atmos_leak, 				5,		null, FALSE),
-		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Hostile Runtime", 			/datum/event/hostile_runtime, 			2, 		null, min_jobs = list(DEPARTMENT_ENGINEERING = 1)),
+		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Hostile Runtime", 			/datum/event/hostile_runtime, 			2, 		null),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Bluespace Lockers", 		/datum/event/bluespace_locker, 			3, 		null, TRUE),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Bluespace Anomaly",		/datum/event/anomaly/bluespace,			1,		null, TRUE),
-		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Bioscrambler Anomaly",		/datum/event/anomaly/bioscrambler,		1,		null, TRUE, min_jobs = list(DEPARTMENT_MEDICAL = 1)),
+		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Bioscrambler Anomaly",		/datum/event/anomaly/bioscrambler,		1,		null, TRUE),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Dimensional Anomaly",		/datum/event/anomaly/dimensional,		1,		null, TRUE),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Gravity Anomaly", 			/datum/event/anomaly/grav, 				1,		null, TRUE),
-		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Pyroclastic Anomaly", 		/datum/event/anomaly/pyro,				1,		null, TRUE, min_jobs = list(DEPARTMENT_ENGINEERING = 1)),
+		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Pyroclastic Anomaly", 		/datum/event/anomaly/pyro,				1,		null, TRUE),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Hallucination Anomaly",	/datum/event/anomaly/hallucination,		1,		null, TRUE),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Flux Anomaly",				/datum/event/anomaly/flux,				1,		null, TRUE),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Weather Anomaly",			/datum/event/anomaly/weather,			1,		null, TRUE),
@@ -61,14 +61,16 @@
 	available_events = list(
 		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Nothing",				/datum/event/nothing						,5),
 		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Meteor Wave",			/datum/event/meteor_wave					,2	, null, TRUE),
-		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Carp Migration",		/datum/event/carp_migration					,2	, null, TRUE, min_jobs = list(DEPARTMENT_SECURITY = 3)),
+		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Carp Migration",		/datum/event/carp_migration					,2	, null, TRUE),
 		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Jellyfish Migration",	/datum/event/jellyfish_migration			,3	, null, TRUE),
-		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Disease Outbreak",	/datum/event/disease_outbreak				,3	, null, TRUE, min_jobs = list(DEPARTMENT_MEDICAL = 2)),
-		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Clang",				/datum/event/clang							,2	, null, TRUE, min_jobs = list(DEPARTMENT_ENGINEERING = 2)),
+		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Disease Outbreak",	/datum/event/disease_outbreak				,3	, null, TRUE),
+		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Clang",				/datum/event/clang							,2	, null, TRUE),
 		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Electrical Storm",	/datum/event/electrical_storm				,2	, null, FALSE),
-		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Hostile Runtime", 	/datum/event/hostile_runtime				,2  , null, FALSE, min_jobs = list(DEPARTMENT_ENGINEERING = 1)),
+		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Hostile Runtime", 	/datum/event/hostile_runtime				,2  , null, FALSE),
+		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Soda", 				/datum/event/soda_machine					,2  , null, FALSE),
 	)
 	add_disabled_events(list(
 		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Horse", 				/datum/event/horse							,2  , null, FALSE),
-		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Soda", 				/datum/event/soda_machine					,2  , null, FALSE)
+		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Box",					/datum/event/box							,2	, null, FALSE),
+		new /datum/event_meta(EVNET_LEVEL_MAJOR, "Mannequin",			/datum/event/mannequin,						,2	, null, FALSE)
 	))
