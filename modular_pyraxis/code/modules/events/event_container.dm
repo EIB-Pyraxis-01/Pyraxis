@@ -72,5 +72,5 @@
 	add_disabled_events(list(
 		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Horse", 				/datum/event/horse							,2  , null, FALSE),
 		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Box",					/datum/event/box							,2	, null, FALSE),
-		new /datum/event_meta(EVNET_LEVEL_MAJOR, "Mannequin",			/datum/event/mannequin,						,2	, null, FALSE)
+		new /datum/event_meta(EVENT_LEVEL_MAJOR, "Mannequin",			/datum/event/mannequin,						,2	, null, FALSE)
 	))
