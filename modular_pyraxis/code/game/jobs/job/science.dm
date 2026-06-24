@@ -84,30 +84,19 @@
 	job_description = "A " + JOB_SCIENTIST + " is a generalist working in the Research department, with general knowledge of the scientific process, as well as \
 						the principles and requirements of Research and Development. They may also formulate experiments of their own devising, if \
 						they find an appropriate topic."
-	alt_titles = list(JOB_ALT_RESEARCHER = /datum/alt_title/researcher, JOB_ALT_LAB_ASSISTANT = /datum/alt_title/lab_assistant, JOB_ALT_XENOARCHAEOLOGIST = /datum/alt_title/xenoarch,
-							JOB_ALT_XENOPALEONTOLOGIST = /datum/alt_title/xenopaleontologist, JOB_ALT_ANOMALIST = /datum/alt_title/anomalist, JOB_ALT_PHORON_RESEARCHER = /datum/alt_title/phoron_research,
+	alt_titles = list(JOB_ALT_RESEARCHER = /datum/alt_title/researcher, JOB_ALT_LAB_ASSISTANT = /datum/alt_title/lab_assistant,
+							JOB_ALT_XENOPALEONTOLOGIST = /datum/alt_title/xenopaleontologist, JOB_ALT_ANOMALIST = /datum/alt_title/anomalist,
 						JOB_ALT_GAS_PHYSICIST = /datum/alt_title/gas_physicist, JOB_ALT_RESEARCH_CONTRACTOR = /datum/alt_title/research_contractor)
 
 /datum/job/scientist/get_request_reasons()
 	return list("Assembling expedition team")
 
 // Scientist Alt Titles
-/datum/alt_title/xenoarch
-	title = JOB_ALT_XENOARCHAEOLOGIST
-	title_blurb = "A " + JOB_ALT_XENOARCHAEOLOGIST + " enters digsites in search of artifacts of alien origin. These digsites are frequently in vacuum or other inhospitable \
-					locations, and as such a " + JOB_ALT_XENOARCHAEOLOGIST + " should be prepared to handle hostile evironmental conditions."
-
 /datum/alt_title/anomalist
 	title = JOB_ALT_ANOMALIST
 	title_blurb = "An " + JOB_ALT_ANOMALIST + " is a " + JOB_SCIENTIST + " whose expertise is analyzing alien artifacts. They are familar with the most common methods of testing artifact \
 					function. They work closely with " + JOB_ALT_XENOARCHAEOLOGIST + "s, or Miners, if either role is present."
 	title_outfit = /datum/decl/hierarchy/outfit/job/science/scientist/anomalist
-
-/datum/alt_title/phoron_research
-	title = JOB_ALT_PHORON_RESEARCHER
-	title_blurb = "A " + JOB_ALT_PHORON_RESEARCHER + " is a specialist in the practical applications of phoron, and has knowledge of its practical uses and dangers. \
-					Many " + JOB_ALT_PHORON_RESEARCHER + "s are interested in the combustability and explosive properties of gaseous phoron, as well as the specific hazards \
-					of working with the substance in that state."
 
 /datum/alt_title/researcher
 	title = JOB_ALT_RESEARCHER

@@ -135,23 +135,3 @@
 		return list(ACCESS_MAINT_TUNNELS)
 	else
 		return list()
-
-//////////////////////////////////
-//		Outsider
-//////////////////////////////////
-
-/datum/job/outsider		// Outsider
-	title = "Outsider"
-	supervisors = "nobody! You don't work here"
-	job_description = "An outsider isn't supposed to be here. They have no real authority or responsibility."
-	timeoff_factor = 0
-	requestable = FALSE
-
-/datum/job/outsider/New()
-	..()
-	if(config)
-		total_positions = CONFIG_GET(number/limit_visitors)
-		spawn_positions = CONFIG_GET(number/limit_visitors)
-
-/datum/job/outsider/get_access()
-	return list()

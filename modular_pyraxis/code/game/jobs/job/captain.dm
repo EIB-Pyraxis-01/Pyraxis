@@ -45,9 +45,9 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 /datum/job/hop
 	title = JOB_HEAD_OF_PERSONNEL
 	flag = HOP
-	departments = list(DEPARTMENT_COMMAND, DEPARTMENT_CIVILIAN, DEPARTMENT_CARGO)
+	departments = list(DEPARTMENT_COMMAND, DEPARTMENT_CIVILIAN)
 	sorting_order = 2
-	departments_managed = list(DEPARTMENT_CIVILIAN, DEPARTMENT_CARGO)
+	departments_managed = list(DEPARTMENT_CIVILIAN)
 	department_flag = CIVILIAN
 	faction = FACTION_STATION
 	total_positions = 1
@@ -66,13 +66,10 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 
 	disallow_jobhop = TRUE
 	pto_type = PTO_CIVILIAN
-	departments = list(DEPARTMENT_COMMAND, DEPARTMENT_CIVILIAN)
-	departments_managed = list(DEPARTMENT_CIVILIAN, DEPARTMENT_CARGO, DEPARTMENT_PLANET)
 	dept_time_required = 60
 
 	outfit_type = /datum/decl/hierarchy/outfit/job/hop
-	job_description = "The " + JOB_HEAD_OF_PERSONNEL + " manages the Service department, the Exploration team, and most other civilians. They also \
-						manage the Supply department, through the " + JOB_QUARTERMASTER + ". In addition, the " + JOB_HEAD_OF_PERSONNEL + " oversees the personal accounts \
+	job_description = "The " + JOB_HEAD_OF_PERSONNEL + " manages the Service department, and most other civilians. In addition, the " + JOB_HEAD_OF_PERSONNEL + " oversees the personal accounts \
 						of the crew, including their money and access. If necessary, the " + JOB_HEAD_OF_PERSONNEL + " is first in line to assume Acting Command."
 
 	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_FORENSICS_LOCKERS, ACCESS_MEDICAL, ACCESS_ENGINE, ACCESS_CHANGE_IDS, ACCESS_AI_UPLOAD, ACCESS_EVA, ACCESS_HEADS, ACCESS_ALL_PERSONAL_LOCKERS, ACCESS_MAINT_TUNNELS, ACCESS_BAR, ACCESS_JANITOR, ACCESS_CONSTRUCTION, ACCESS_MORGUE, ACCESS_CREMATORIUM, ACCESS_KITCHEN, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_MAILSORTING, ACCESS_QM, ACCESS_HYDROPONICS, ACCESS_LAWYER, ACCESS_CHAPEL_OFFICE, ACCESS_LIBRARY, ACCESS_RESEARCH, ACCESS_MINING, ACCESS_HEADS_VAULT, ACCESS_MINING_STATION, ACCESS_HOP, ACCESS_RC_ANNOUNCE, ACCESS_CLOWN, ACCESS_TOMFOOLERY, ACCESS_MIME, ACCESS_KEYCARD_AUTH, ACCESS_GATEWAY, ACCESS_ENTERTAINMENT)
@@ -99,48 +96,3 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 
 /datum/alt_title/first_mate
 	title = JOB_ALT_FIRST_MATE
-
-//////////////////////////////////
-//		Command Secretary
-//////////////////////////////////
-
-/datum/job/secretary
-	title = JOB_COMMAND_SECRETARY
-	flag = BRIDGE
-	departments = list(DEPARTMENT_COMMAND)
-	department_accounts = list(DEPARTMENT_COMMAND)
-	department_flag = CIVILIAN
-	faction = FACTION_STATION
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "command staff"
-	selection_color = "#1D1D4F"
-	minimal_player_age = 5
-	economic_modifier = 7
-
-	disallow_jobhop = TRUE
-	pto_type = PTO_CIVILIAN
-	alt_titles = list(JOB_ALT_COMMAND_LIAISON = /datum/alt_title/command_liaison, JOB_ALT_COMMAND_ASSISTANT = /datum/alt_title/command_assistant, JOB_ALT_COMMAND_INTERN = /datum/alt_title/command_intern,
-						JOB_ALT_BRIDGE_SECRETARY = /datum/alt_title/bridge_secretary, JOB_ALT_BRIDGE_ASSISTANT = /datum/alt_title/bridge_assistant)
-
-	access = list(ACCESS_HEADS, ACCESS_KEYCARD_AUTH)
-	minimal_access = list(ACCESS_HEADS, ACCESS_KEYCARD_AUTH)
-
-	outfit_type = /datum/decl/hierarchy/outfit/job/secretary
-	job_description = "A " + JOB_COMMAND_SECRETARY + " handles paperwork duty for the Heads of Staff, so they can better focus on managing their departments. \
-						They are not Heads of Staff, and have no real authority."
-
-/datum/alt_title/command_liaison
-	title = JOB_ALT_COMMAND_LIAISON
-
-/datum/alt_title/command_assistant
-	title = JOB_ALT_COMMAND_ASSISTANT
-
-/datum/alt_title/command_intern
-	title = JOB_ALT_COMMAND_INTERN
-
-/datum/alt_title/bridge_secretary
-	title = JOB_ALT_BRIDGE_SECRETARY
-
-/datum/alt_title/bridge_assistant
-	title = JOB_ALT_BRIDGE_ASSISTANT

@@ -6,14 +6,14 @@
 	title = JOB_QUARTERMASTER
 	flag = QUARTERMASTER
 	departments = list(DEPARTMENT_CARGO)
-	sorting_order = 1 // QM is above the cargo techs, but below the HoP.
+	sorting_order = 1
 	departments_managed = list(DEPARTMENT_CARGO)
 	department_flag = CIVILIAN
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
 	pto_type = PTO_CARGO
-	supervisors = "the " + JOB_HEAD_OF_PERSONNEL
+	supervisors = "the " + JOB_ALT_FOREMAN
 	selection_color = "#9b633e"
 	economic_modifier = 5
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_QM, ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_RC_ANNOUNCE)
@@ -226,7 +226,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	pto_type = PTO_CARGO
-	supervisors = "the "+ JOB_ALT_FOREMAN
+	supervisors = "the "+ JOB_QUARTERMASTER
 	selection_color = "#7a4f33"
 	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN)
 	minimal_access = list(ACCESS_KITCHEN)

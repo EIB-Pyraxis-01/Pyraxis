@@ -142,3 +142,68 @@
 
 /datum/alt_title/investigator
 	title = JOB_ALT_INVESTIGATOR
+
+/datum/job/clown
+	title = JOB_CLOWN
+	flag = CLOWN
+	departments = list(DEPARTMENT_CIVILIAN)
+	department_flag = ENGSEC
+	faction = FACTION_STATION
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the spirit of laughter"
+	selection_color = "#515151"
+	economic_modifier = 1
+	job_description = "A " + JOB_CLOWN + " is there to entertain the crew and keep high morale using various harmless pranks and ridiculous jokes!"
+	whitelist_only = 1
+	latejoin_only = 0
+	requestable = FALSE
+	outfit_type = /datum/decl/hierarchy/outfit/job/clown
+	pto_type = PTO_CIVILIAN
+	alt_titles = list(JOB_ALT_JESTER = /datum/alt_title/jester, JOB_ALT_FOOL = /datum/alt_title/fool)
+
+/datum/alt_title/jester
+	title = JOB_ALT_JESTER
+
+/datum/alt_title/fool
+	title = JOB_ALT_FOOL
+
+/datum/job/clown/get_access()
+	if(CONFIG_GET(flag/assistant_maint))
+		return list(ACCESS_MAINT_TUNNELS, ACCESS_ENTERTAINMENT, ACCESS_CLOWN, ACCESS_TOMFOOLERY)
+	else
+		return list(ACCESS_ENTERTAINMENT, ACCESS_CLOWN, ACCESS_TOMFOOLERY)
+
+/datum/job/mime
+	title = JOB_MIME
+	flag = MIME
+	departments = list(DEPARTMENT_CIVILIAN)
+	department_flag = ENGSEC
+	faction = FACTION_STATION
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the spirit of performance"
+	selection_color = "#515151"
+	economic_modifier = 1
+	job_description = "A " + JOB_MIME + " is there to entertain the crew and keep high morale using unbelievable performances and acting skills!"
+	alt_titles = list(JOB_ALT_PASEUR = /datum/alt_title/poseur)
+	whitelist_only = 1
+	latejoin_only = 0
+	requestable = FALSE
+	outfit_type = /datum/decl/hierarchy/outfit/job/mime
+	pto_type = PTO_CIVILIAN
+
+/datum/job/mime/equip(mob/living/carbon/human/H, alt_title)
+	. = ..()
+	if(H.mind)
+		var/datum/action/innate/vow_of_silence/vow = new(H)
+		vow.Grant(H)
+
+/datum/alt_title/poseur
+	title = JOB_ALT_PASEUR
+
+/datum/job/mime/get_access()
+	if(CONFIG_GET(flag/assistant_maint))
+		return list(ACCESS_MAINT_TUNNELS, ACCESS_ENTERTAINMENT, ACCESS_TOMFOOLERY, ACCESS_MIME)
+	else
+		return list(ACCESS_ENTERTAINMENT, ACCESS_TOMFOOLERY, ACCESS_MIME)
