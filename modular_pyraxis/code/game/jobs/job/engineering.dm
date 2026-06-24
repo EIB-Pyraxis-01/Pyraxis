@@ -7,7 +7,7 @@
 	total_positions = 3
 	spawn_positions = 3
 	pto_type = PTO_ENGINEERING
-	supervisors = "the " + JOB_CHIEF_ENGINEER
+	supervisors = "the " + JOB_ALT_FOREMAN
 	selection_color = "#5B4D20"
 	economic_modifier = 5
 	access = list(ACCESS_MECHA, ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_EXTERNAL_AIRLOCKS)
@@ -40,7 +40,7 @@
 	faction = FACTION_STATION
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the "+ JOB_CHIEF_ENGINEER
+	supervisors = "the "+ JOB_ALT_FOREMAN
 	selection_color = "#5B4D20"
 	economic_modifier = 5
 	pto_type = PTO_ENGINEERING
@@ -48,7 +48,7 @@
 	access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_MECHA)
 	minimal_access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_MECHA)
 	alt_titles = list(JOB_ALT_MAINTENANCE_TECHNICIAN = /datum/alt_title/maint_tech, JOB_ALT_ENGINE_TECHNICIAN = /datum/alt_title/engine_tech,
-						JOB_ALT_ELECTRICIAN = /datum/alt_title/electrician, JOB_ALT_CONSTRUCTION_ENGINEER = /datum/alt_title/construction_engi, JOB_ALT_ENGINEERING_CONTRACTOR = /datum/alt_title/engineering_contractor,  JOB_ALT_COMPUTER_TECHNICIAN = /datum/alt_title/computer_tech, JOB_ALT_SALVAGE_TECHNICIAN = /datum/alt_title/salvage_tech, JOB_ALT_DAMAGE_CONTROL_SPECIALIST = /datum/alt_title/damage_control_specialist, JOB_ALT_CHEMENGINEER = /datum/alt_title/chem_tech)
+						JOB_ALT_ELECTRICIAN = /datum/alt_title/electrician, JOB_ALT_CONSTRUCTION_ENGINEER = /datum/alt_title/construction_engi, JOB_ALT_COMPUTER_TECHNICIAN = /datum/alt_title/computer_tech, JOB_ALT_SALVAGE_TECHNICIAN = /datum/alt_title/salvage_tech, JOB_ALT_DAMAGE_CONTROL_SPECIALIST = /datum/alt_title/damage_control_specialist)
 
 	minimal_player_age = 3
 	min_age_by_species = list(SPECIES_PROMETHEAN = 2)
@@ -59,12 +59,6 @@
 
 /datum/job/engineer/get_request_reasons()
 	return list("Engine setup", "Construction project", "Repairs necessary", "Assembling expedition team")
-
-/datum/job/engineer/equip(mob/living/carbon/human/H, alt_title)
-	. = ..()
-	ADD_TRAIT(H, TRAIT_CAN_SEE_WIRES, JOB_TRAIT)
-	if(H.mind)
-		ADD_TRAIT(H.mind, TRAIT_CAN_SEE_WIRES, JOB_TRAIT)
 
 // Engineer Alt Titles
 /datum/alt_title/maint_tech
@@ -87,10 +81,6 @@
 	title_blurb = "A " + JOB_ALT_CONSTRUCTION_ENGINEER + " fulfills similar duties to other engineers, but usually occupies spare time with construction of extra facilities in dedicated areas or \
 					as additions to station layout."
 
-/datum/alt_title/engineering_contractor
-	title = JOB_ALT_ENGINEERING_CONTRACTOR
-	title_blurb = "An " + JOB_ALT_ENGINEERING_CONTRACTOR + " fulfills similar duties to other engineers, but isn't directly employed by NT proper."
-
 /datum/alt_title/computer_tech
 	title = JOB_ALT_COMPUTER_TECHNICIAN
 	title_blurb = "A " + JOB_ALT_COMPUTER_TECHNICIAN + " fulfills similar duties to other engineers, but specializes in working with software and computers. They also often deal with integrated circuits."
@@ -102,11 +92,6 @@
 /datum/alt_title/damage_control_specialist
 	title = JOB_ALT_DAMAGE_CONTROL_SPECIALIST
 	title_blurb = "A " + JOB_ALT_DAMAGE_CONTROL_SPECIALIST + " is the Engineering Department's answer to first responders like the " + JOB_PARAMEDIC + ", being responsible for stabilizing situations and evacuating personnel, then conducting repairs."
-
-/datum/alt_title/chem_tech
-	title = JOB_ALT_CHEMENGINEER
-	title_blurb = "A " + JOB_ALT_CHEMENGINEER + " specializes in industrial scale chemical production. They are responsible for planning the construction of and operating chemical refinery machines."
-	title_outfit = /datum/decl/hierarchy/outfit/job/engineering/chems
 
 //////////////////////////////////
 //			Atmos Tech
@@ -120,7 +105,7 @@
 	total_positions = 3
 	spawn_positions = 3
 	pto_type = PTO_ENGINEERING
-	supervisors = "the " + JOB_CHIEF_ENGINEER
+	supervisors = "the " + JOB_ALT_FOREMAN
 	selection_color = "#5B4D20"
 	economic_modifier = 5
 	access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_MECHA)

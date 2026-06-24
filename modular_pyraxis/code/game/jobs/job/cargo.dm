@@ -226,7 +226,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	pto_type = PTO_CARGO
-	supervisors = "the "+ JOB_HEAD_OF_PERSONNEL
+	supervisors = "the "+ JOB_ALT_FOREMAN
 	selection_color = "#7a4f33"
 	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN)
 	minimal_access = list(ACCESS_KITCHEN)

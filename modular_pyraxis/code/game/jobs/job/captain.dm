@@ -46,13 +46,13 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	title = JOB_HEAD_OF_PERSONNEL
 	flag = HOP
 	departments = list(DEPARTMENT_COMMAND, DEPARTMENT_CIVILIAN, DEPARTMENT_CARGO)
-	sorting_order = 2 // Above the QM, below captain.
+	sorting_order = 2
 	departments_managed = list(DEPARTMENT_CIVILIAN, DEPARTMENT_CARGO)
 	department_flag = CIVILIAN
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the " + JOB_SITE_MANAGER
+	supervisors = "the " + JOB_ALT_FOREMAN
 	selection_color = "#1D1D4F"
 	req_admin_notify = 1
 	minimal_player_age = 10
