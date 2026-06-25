@@ -176,8 +176,14 @@ SUBSYSTEM_DEF(rem)
 	if(!E)
 		return FALSE
 
+	var/datum/event/event_holder = new E.event_path
+
 	var/datum/event_meta/meta = new
 	meta.severity = floor(mode/2)
 	new E.event_path(meta)
 	last_event = E.type
+
+	if(event_holder.endWhen)
+		addtimer(CALLBACK(event_holder, TYPE_PROC_REF(/datum/event, end)), event_holder.endWhen)
+
 	return TRUE

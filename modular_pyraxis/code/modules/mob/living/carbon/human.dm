@@ -15,8 +15,8 @@
 	var/datum/trait/negative/boneless/nobones = new(src)
 	nobones.apply(species, src)
 
-	var/mob/living/simple_mob/vore/alienanimals/skeleton/fleeing/skeleton = new(get_turf(src))
-	skeleton.name = name + "'s skeleton."
+	var/mob/living/simple_mob/vore/alienanimals/skeleton/alt/fleeing/skeleton = new(get_turf(src))
+	skeleton.name = name + "'s skeleton"
 	skeleton.move_speed = 5
 	skeleton.resize(size_multiplier)
 	skeleton.say("FINALLY")

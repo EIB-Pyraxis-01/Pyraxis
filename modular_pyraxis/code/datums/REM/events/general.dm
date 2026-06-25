@@ -15,3 +15,9 @@
 	max_mode = REM_ANOMALOUS
 	event_path = /datum/event/bluespace_locker
 	extra_value = 5
+
+/datum/rem_event/box
+	min_mode = REM_IRREGULAR
+	max_mode = REM_ANOMALOUS
+	event_path = /datum/event/box
+	extra_value = 5

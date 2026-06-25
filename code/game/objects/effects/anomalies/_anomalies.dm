@@ -72,7 +72,7 @@
 /obj/effect/anomaly/proc/anomalyEffect(seconds_per_tick)
 	if(prob(move_chance) && !locate(/obj/effect/suspension_field) in get_turf(src))
 		move_anomaly()
-	SSrem.add_activity(DEPARTMENT_RESEARCH, 10) // PY Edit - Make REM got a bit crazy
+		SSrem.add_activity(DEPARTMENT_RESEARCH, 10) // PY Edit - Make REM got a bit crazy
 
 // Used in anomaly harvesting - Normal anomalies shouldn't pulse
 /obj/effect/anomaly/proc/anomalyPulse()
@@ -85,7 +85,7 @@
 	if(QDELETED(src))
 		return FALSE
 	stats.next_activation = world.time + rand(stats.min_activation, stats.max_activation)
-	SSrem.add_activity(DEPARTMENT_RESEARCH, 5) // PY Edit
+	SSrem.add_activity(DEPARTMENT_RESEARCH, 2) // PY Edit
 	return TRUE
 
 /obj/effect/anomaly/proc/move_anomaly()

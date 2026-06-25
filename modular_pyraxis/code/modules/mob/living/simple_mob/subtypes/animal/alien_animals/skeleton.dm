@@ -1,4 +1,4 @@
-/mob/living/simple_mob/vore/alienanimals/skeleton/fleeing
+/mob/living/simple_mob/vore/alienanimals/skeleton/alt/fleeing
 	ai_holder_type = /datum/ai_holder/simple_mob/melee/hit_and_run
 
 /datum/ai_holder/simple_mob/melee/hit_and_run/runner
