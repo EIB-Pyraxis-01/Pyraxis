@@ -13,7 +13,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	pto_type = PTO_CARGO
-	supervisors = "the " + JOB_ALT_FOREMAN
+	supervisors = "the " + JOB_SITE_MANAGER
 	selection_color = "#9b633e"
 	economic_modifier = 5
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_CARGO_BOT, ACCESS_QM, ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_RC_ANNOUNCE)

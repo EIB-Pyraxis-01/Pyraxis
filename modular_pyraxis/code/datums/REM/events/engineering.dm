@@ -29,3 +29,16 @@
 	departments = list(DEPARTMENT_ENGINEERING)
 	event_path = /datum/event/window_break
 	extra_value = 10
+
+/datum/rem_event/comms_blackout
+	min_mode = REM_IRREGULAR
+	max_mode = REM_ANOMALOUS
+	departments = list(DEPARTMENT_ENGINEERING)
+	event_path = /datum/event/communications_blackout
+	extra_value = 10
+
+/datum/rem_event/grid_check
+	min_mode = REM_TENSION_RISING
+	max_mode = REM_ANOMALOUS
+	departments = list(DEPARTMENT_ENGINEERING)
+	event_path = /datum/event/grid_check

@@ -1,7 +1,7 @@
 GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newscast = 1))
 
 /datum/job/foreman
-	title = JOB_ALT_FOREMAN
+	title = JOB_SITE_MANAGER
 	flag = CAPTAIN
 	departments = list(DEPARTMENT_COMMAND, DEPARTMENT_ENGINEERING)
 	department_flag = ENGSEC
@@ -27,9 +27,8 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	dept_time_required = 80 //Pending something more complicated
 
 	outfit_type = /datum/decl/hierarchy/outfit/job/foreman
-	job_description = "The " + JOB_ALT_FOREMAN + " manages the other Command Staff, and through them the rest of the station. Though they have access to everything, \
-						they do not understand everything, and are expected to delegate tasks to the appropriate crew member. The " + JOB_ALT_FOREMAN + " is expected to \
-						have an understanding of Standard Operating Procedure, and is subject to it, and legal action, in the same way as every other crew member."
+	job_description = "The " + JOB_SITE_MANAGER + " manages the Engineering and Command Staff, ensuring the Engineers work oon what needs to be done, handling distribution of manpower and repairs. \
+			The " + JOB_SITE_MANAGER + " is expected to have an understanding of Engineering, and Standard Operating Procedure, and is subject to it, and legal action, in the same way as every other crew member."
 
 	alt_titles = list(JOB_ALT_MAINTENANCE_MANAGER, JOB_ALT_HEAD_ENGINEER)
 
@@ -52,7 +51,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the " + JOB_ALT_FOREMAN
+	supervisors = "the " + JOB_SITE_MANAGER
 	selection_color = "#1D1D4F"
 	req_admin_notify = 1
 	minimal_player_age = 10

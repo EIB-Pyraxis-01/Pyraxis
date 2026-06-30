@@ -1,6 +1,7 @@
 //////////////////////////////////
 //			Assistant
 //////////////////////////////////
+/*
 /datum/job/assistant
 	title = JOB_ALT_ASSISTANT
 	flag = ASSISTANT
@@ -36,11 +37,6 @@
 	title_blurb = "A " + JOB_ALT_MEDICAL_INTERN + " attempts to provide whatever the Medical department needs. They are frequently asked to pay attention to \
 					the suit sensors console. A " + JOB_ALT_MEDICAL_INTERN + " has no real authority."
 
-/datum/alt_title/research_assist
-	title = JOB_ALT_RESEARCH_ASSISTANT
-	title_blurb = "A " + JOB_ALT_RESEARCH_ASSISTANT + " attempts to assist anyone working in the Research department. They are expected to follow the instruction \
-					of proper Research staff, as it is frequently a matter of safety. A " + JOB_ALT_RESEARCH_ASSISTANT + " has no real authority."
-
 /datum/alt_title/visitor
 	title = JOB_ALT_VISITOR
 	title_blurb = "A " + JOB_ALT_VISITOR + " is anyone who has arrived on the station but does not have a specific job to do. Many off-duty crewmembers \
@@ -53,7 +49,7 @@
 	title_blurb = "A " + JOB_ALT_RESIDENT + " is an individual who resides on the station, frequently in a different part of the station than what is seen. \
 					They are considered to be part of the crew for most purposes, but have no real authority."
 	title_outfit = /datum/decl/hierarchy/outfit/job/assistant/resident
-
+*/
 //////////////////////////////////
 //		Intern
 //////////////////////////////////
@@ -74,7 +70,6 @@
 	outfit_type = /datum/decl/hierarchy/outfit/job/assistant/intern
 	alt_titles = list(JOB_ALT_APPRENTICE_ENGINEER = /datum/alt_title/intern_eng,
 					  JOB_ALT_MEDICAL_INTERN = /datum/alt_title/intern_med,
-					  JOB_ALT_RESEARCH_INTERN = /datum/alt_title/intern_sci,
 					  JOB_ALT_SECURITY_CADET = /datum/alt_title/intern_sec,
 					  JOB_ALT_JR_CARGO_TECH = /datum/alt_title/intern_crg,
 					  JOB_ALT_SERVER = /datum/alt_title/server,

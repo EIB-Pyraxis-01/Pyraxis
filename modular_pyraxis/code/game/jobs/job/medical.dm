@@ -11,7 +11,7 @@
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the " + JOB_ALT_FOREMAN
+	supervisors = "the " + JOB_SITE_MANAGER
 	selection_color = "#026865"
 	req_admin_notify = 1
 	economic_modifier = 10
@@ -177,7 +177,7 @@
 	faction = FACTION_STATION
 	total_positions = 0
 	spawn_positions = 0
-	supervisors = "the " + JOB_CHIEF_MEDICAL_OFFICER + " and " + JOB_RESEARCH_DIRECTOR
+	supervisors = "the " + JOB_CHIEF_MEDICAL_OFFICER
 	selection_color = "#013D3B"
 	economic_modifier = 7
 	access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_SURGERY, ACCESS_CHEMISTRY, ACCESS_VIROLOGY, ACCESS_GENETICS, ACCESS_RESEARCH)
@@ -306,3 +306,24 @@
 	title = JOB_ALT_BIOMECHANICAL_ENGINEER
 	title_blurb = "A " + JOB_ALT_BIOMECHANICAL_ENGINEER + " primarily works on prosthetics, and the organic parts attached to them. They may have some \
 					knowledge of the relatively simple surgical procedures used in making cyborgs and attaching prosthesis."
+
+/datum/job/xenobiologist
+	title = JOB_XENOBIOLOGIST
+	flag = XENOBIOLOGIST
+	departments = list(DEPARTMENT_MEDICAL)
+	department_flag = MEDSCI
+	faction = FACTION_STATION
+	total_positions = 3
+	spawn_positions = 3
+	pto_type = PTO_MEDICAL
+	supervisors = "the " + JOB_CHIEF_MEDICAL_OFFICER
+	selection_color = "#013D3B"
+	economic_modifier = 7
+	access = list(ACCESS_MEDICAL, ACCESS_MEDICAL_EQUIP, ACCESS_MORGUE, ACCESS_SURGERY, ACCESS_CHEMISTRY, ACCESS_VIROLOGY, ACCESS_GENETICS, ACCESS_EVA)
+	minimal_access = list(ACCESS_MEDICAL, ACCESS_MEDICAL_EQUIP, ACCESS_MORGUE, ACCESS_SURGERY, ACCESS_VIROLOGY, ACCESS_EVA)
+	outfit_type = /datum/decl/hierarchy/outfit/job/medical/doctor
+	banned_job_species = list(FBP_DIGITAL)
+	minimal_player_age = 14
+	min_age_by_species = list(SPECIES_PROMETHEAN = 2)
+	job_description = "A " + JOB_XENOBIOLOGIST + " studies esoteric lifeforms, usually in the relative safety of their lab. They attempt to find ways to benefit \
+						from the byproducts of these lifeforms, and their main subject at present is the Giant Slime."

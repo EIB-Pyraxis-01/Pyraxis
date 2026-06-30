@@ -7,7 +7,7 @@
 	total_positions = 3
 	spawn_positions = 3
 	pto_type = PTO_ENGINEERING
-	supervisors = "the " + JOB_ALT_FOREMAN
+	supervisors = "the " + JOB_SITE_MANAGER
 	selection_color = "#5B4D20"
 	economic_modifier = 5
 	access = list(ACCESS_MECHA, ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_EXTERNAL_AIRLOCKS)
@@ -20,9 +20,6 @@
 
 /datum/alt_title/head_engineer
 	title = JOB_ALT_HEAD_ENGINEER
-
-/datum/alt_title/foreman
-	title = JOB_ALT_FOREMAN
 
 /datum/alt_title/maintenance_manager
 	title = JOB_ALT_MAINTENANCE_MANAGER
@@ -38,7 +35,7 @@
 	faction = FACTION_STATION
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the "+ JOB_ALT_FOREMAN
+	supervisors = "the "+ JOB_SITE_MANAGER
 	selection_color = "#5B4D20"
 	economic_modifier = 5
 	pto_type = PTO_ENGINEERING
@@ -103,7 +100,7 @@
 	total_positions = 3
 	spawn_positions = 3
 	pto_type = PTO_ENGINEERING
-	supervisors = "the " + JOB_ALT_FOREMAN
+	supervisors = "the " + JOB_SITE_MANAGER
 	selection_color = "#5B4D20"
 	economic_modifier = 5
 	access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_MECHA)

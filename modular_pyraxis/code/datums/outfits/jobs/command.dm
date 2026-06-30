@@ -1,5 +1,5 @@
 /datum/decl/hierarchy/outfit/job/foreman
-	name = OUTFIT_JOB_NAME(JOB_ALT_FOREMAN)
+	name = OUTFIT_JOB_NAME(JOB_SITE_MANAGER)
 	glasses = /obj/item/clothing/glasses/sunglasses
 	head = /obj/item/clothing/head/hardhat/dblue
 	uniform = /obj/item/clothing/under/rank/chief_engineer
