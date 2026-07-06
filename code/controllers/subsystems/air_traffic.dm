@@ -77,7 +77,7 @@ SUBSYSTEM_DEF(atc)
 
 /datum/controller/subsystem/atc/proc/msg(message,sender)
 	ASSERT(message)
-	GLOB.global_announcer.autosay("[message]", sender ? sender : "[using_map.dock_name] Control", CHANNEL_ATC)
+	GLOB.global_announcer.autosay("[message]", sender ? sender : "[using_map.dock_name] Control") // PY Edit - Stupid change. ATC goes to Common.
 
 /datum/controller/subsystem/atc/proc/is_squelched()
 	return squelched
