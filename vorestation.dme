@@ -798,7 +798,6 @@
 #include "code\datums\components\species\shadekin\powers\dark_maw.dm"
 #include "code\datums\components\species\shadekin\powers\dark_respite.dm"
 #include "code\datums\components\species\shadekin\powers\phase_shift.dm"
-#include "code\datums\components\species\shadekin\powers\regenerate_other.dm"
 #include "code\datums\components\species\shadekin\powers\dark_tunnel\dark_tunnel_structures.dm"
 #include "code\datums\components\species\shadekin\powers\dark_tunnel\dark_tunneling.dm"
 #include "code\datums\components\structures\bluespace_connection.dm"
