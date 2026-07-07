@@ -1,3 +1,9 @@
 2026-07-06:
   TheCaramelion:
   - bugfix: Moves ATC messages to common
+2026-07-07:
+  Guti:
+  - balance: Removed shadekin thermal vision
+  - balance: Removed shadekin heal boop
+  - balance: Shadekin can not talk in radios while phased
+  - balance: Shadekin take a second to phase out now

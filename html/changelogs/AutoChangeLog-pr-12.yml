@@ -1,7 +1,0 @@
-author: "Guti"
-delete-after: True
-changes:
-  - balance: "Removed shadekin thermal vision"
-  - balance: "Removed shadekin heal boop"
-  - balance: "Shadekin can not talk in radios while phased"
-  - balance: "Shadekin take a second to phase out now"
