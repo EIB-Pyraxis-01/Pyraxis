@@ -822,6 +822,7 @@
 #include "code\datums\departmentgoals\medicalgoals.dm"
 #include "code\datums\departmentgoals\researchgoals.dm"
 #include "code\datums\departmentgoals\securitygoals.dm"
+#include "code\datums\departmentgoals\voregoals.dm"
 #include "code\datums\diseases\_disease.dm"
 #include "code\datums\diseases\_MobProcs.dm"
 #include "code\datums\diseases\anxiety.dm"
