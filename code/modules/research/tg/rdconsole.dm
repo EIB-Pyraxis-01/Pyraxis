@@ -116,7 +116,7 @@ Nothing else in the console has ID requirements.
 		// if(istype(stored_research, /datum/techweb/science))
 		// 	SSblackbox.record_feedback("associative", "science_techweb_unlock", 1, list("id" = "[id]", "name" = TN.display_name, "price" = "[json_encode(price)]", "time" = ISOtime()))
 		if(stored_research.research_node_id(id, research_source = src))
-			atom_say("Successfully researched [TN.display_name].")
+			atom_say("Successfully acquired a license for [TN.display_name].") // PY Edit - Licensing
 			var/logname = "Unknown"
 			if(isAI(user))
 				logname = "AI [user.name]"
@@ -203,6 +203,11 @@ Nothing else in the console has ID requirements.
 		// Ensure node is supposed to be visible
 		if (stored_research.hidden_nodes[v])
 			continue
+
+		// PY Edit Start - Hide nodes on remote consoles
+		if (filter_department && !(filter_department in n.announce_channels))
+			continue
+		// PY Edit End
 
 		data["nodes"] += list(list(
 			"id" = n.id,
