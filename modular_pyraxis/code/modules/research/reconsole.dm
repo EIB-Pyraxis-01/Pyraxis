@@ -24,7 +24,7 @@
 
 /obj/item/circuitboard/rdconsole/engineering
 	name = T_BOARD("Robotics R&D console")
-	build_path = /obj/machinery/computer/rdconsole_tg/robotics_remote
+	build_path = /obj/machinery/computer/rdconsole_tg/engineering
 	hidden = TRUE
 
 /obj/machinery/computer/rdconsole_tg/medical
