@@ -44,6 +44,7 @@
 	return ..()
 
 // Healing others
+/* PY Edit Start - Remove this
 /mob/living/simple_mob/shadekin/proc/mend_other()
 	//I hate to crunch a view() but I only want ones I can see
 	var/list/viewed = oview(1)
@@ -62,3 +63,4 @@
 	visible_message(span_notice("\The [src] gently places a hand on \the [target]..."))
 	face_atom(target)
 	return TRUE
+*/ // PY Edit End

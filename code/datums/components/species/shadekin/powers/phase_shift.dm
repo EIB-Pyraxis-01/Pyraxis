@@ -88,7 +88,7 @@
 
 	if(!(SK.in_phase))
 		SK.shadekin_adjust_energy(-ability_cost)
-	playsound(src, SK.phase_noise, 75, 1)
+	// playsound(src, SK.phase_noise, 75, 1) PY Edit - Moving this below
 
 	if(!T.CanPass(src,T) || loc != T)
 		to_chat(src,span_warning("You can't use that here!"))
@@ -99,7 +99,13 @@
 		phase_in(T, SK)
 	//Shifting out
 	else
+	// PY Edit Start - Slower phasing
+		to_chat(src, span_notice("You begin concentrating on phasing out..."))
+		if(!do_after(src, 1 SECOND, src))
+			return
+	// PY Edit End - Slower phasing
 		phase_out(T, SK)
+	playsound(src, SK.phase_noise, 75, 1) // PY Edit - Moving this below
 
 /mob/living/proc/phase_in(turf/T, datum/component/shadekin/SK)
 	//In case we're not passed args, do it ourself.
@@ -159,7 +165,7 @@
 /mob/living/proc/shadekin_complete_phase_in(original_canmove, datum/component/shadekin/SK)
 	canmove = original_canmove
 	alpha = initial(alpha)
-	remove_modifiers_of_type(/datum/modifier/shadekin_phase_vision)
+	// remove_modifiers_of_type(/datum/modifier/shadekin_phase_vision) - PY Edit
 	remove_modifiers_of_type(/datum/modifier/phased_out)
 
 	//Potential phase-in vore
@@ -255,7 +261,7 @@
 		phaseanim.adjust_scale(src.size_multiplier, src.size_multiplier)
 		phaseanim.dir = dir
 		alpha = 0
-		add_modifier(/datum/modifier/shadekin_phase_vision)
+		//add_modifier(/datum/modifier/shadekin_phase_vision) - PY Edit
 		if(SK.normal_phase)
 			add_modifier(/datum/modifier/phased_out)
 		addtimer(CALLBACK(src, PROC_REF(complete_phase_out), original_canmove, SK), SK.phase_time, TIMER_DELETE_ME)

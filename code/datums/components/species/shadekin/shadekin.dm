@@ -70,7 +70,7 @@
 	//Ability Vars
 	///The innate abilities we start with
 	var/list/shadekin_abilities = list(/datum/power/shadekin/phase_shift,
-										/datum/power/shadekin/regenerate_other,
+										//datum/power/shadekin/regenerate_other, - PY Edit - Taking this one out
 										/datum/power/shadekin/create_shade)
 	///Datum holder. Largely ignore this.
 	var/list/shadekin_ability_datums = list()
@@ -86,7 +86,7 @@
 
 /datum/component/shadekin/full
 	shadekin_abilities = list(/datum/power/shadekin/phase_shift,
-								/datum/power/shadekin/regenerate_other,
+								//datum/power/shadekin/regenerate_other, - PY Edit - Taking this one out
 								/datum/power/shadekin/create_shade,
 								/datum/power/shadekin/dark_maw,
 								/datum/power/shadekin/dark_respite,
