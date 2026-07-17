@@ -539,7 +539,7 @@
 	desc = "Allows you to build a cocoon around yourself, using it to transform your body if you desire."
 	cost = 0
 	category = 0
-
+/* PY Edit - HATE HATE HATE HATE
 /datum/trait/positive/virus_immune
 	name = "Virus Immune"
 	desc = "You are immune to viruses."
@@ -547,7 +547,7 @@
 
 	can_take = ORGANICS
 	var_changes = list("virus_immune" = TRUE)
-
+*/
 /datum/trait/positive/linguist/master
 	name = "Master Linguist"
 	desc = "You are a master of languages! For whatever reason you might have, you are able to learn many more languages than others. Your language cap is 12 slots."
@@ -833,7 +833,7 @@
 	desc = "Allows you to carry heavy equipment with no slowdown at all."
 	cost = 3
 	var_changes = list("item_slowdown_mod" = 0.0)
-	excludes = list(/datum/trait/positive/speed_fast,/datum/trait/positive/hardy,/datum/trait/positive/hardy_plus)
+	excludes = list(/*/datum/trait/positive/speed_fast,*//datum/trait/positive/hardy,/datum/trait/positive/hardy_plus) // PY Edit - Remove Haste
 
 /datum/trait/positive/bloodsucker_plus
 	name = "Evolved Bloodsucker"
@@ -928,7 +928,7 @@
 	"glow_enabled" = list(TRAIT_PREF_TYPE_BOOLEAN, "Glow enabled on spawn", TRAIT_NO_VAREDIT_TARGET, FALSE))
 
 	added_component_path = /datum/component/radiation_effects
-	excludes = list(/datum/trait/neutral/glowing_radiation, /datum/trait/positive/rad_resistance, /datum/trait/positive/rad_resistance_extreme, /datum/trait/positive/rad_immune, /datum/trait/negative/rad_weakness)
+	excludes = list(/datum/trait/neutral/glowing_radiation, /datum/trait/positive/rad_resistance, /datum/trait/positive/rad_resistance_extreme, /*/datum/trait/positive/rad_immune, *//datum/trait/negative/rad_weakness) // PY Edit - Remove Immune
 
 /datum/trait/positive/radioactive_heal/apply(datum/species/S,mob/living/carbon/human/H, list/trait_prefs)
 	..()
