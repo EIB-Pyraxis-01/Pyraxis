@@ -43,12 +43,25 @@
 /obj/machinery/computer/rdconsole_tg/cargo
 	name = "Cargo License Console"
 	req_access = null
-	req_one_access = list(ACCESS_CARGO)
+	req_one_access = list(ACCESS_RESEARCH, ACCESS_CARGO)
 	circuit = /obj/item/circuitboard/rdconsole/cargo
-	filter_department = CHANNEL_SERVICE
+	filter_department = CHANNEL_SUPPLY
 	is_remote = TRUE
 
 /obj/item/circuitboard/rdconsole/cargo
 	name = T_BOARD("Cargo License console")
 	build_path = /obj/machinery/computer/rdconsole_tg/cargo
+	hidden = TRUE
+
+/obj/machinery/computer/rdconsole_tg/security
+	name = "Security License Console"
+	req_access = null
+	req_one_access = list(ACCESS_RESEARCH, ACCESS_SECURITY)
+	circuit = /obj/item/circuitboard/rdconsole/security
+	filter_department = CHANNEL_SECURITY
+	is_remote = TRUE
+
+/obj/item/circuitboard/rdconsole/security
+	name = T_BOARD("Security License console")
+	build_path = /obj/machinery/computer/rdconsole_tg/security
 	hidden = TRUE
