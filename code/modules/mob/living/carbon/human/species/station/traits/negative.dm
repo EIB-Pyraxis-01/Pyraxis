@@ -301,6 +301,7 @@
 /datum/trait/negative/blindness/handle_environment_special(mob/living/carbon/human/H)
 	H.sdisabilities |= sdisability 		//no matter what you do, the blindess still comes for you // Traitgenes tweaked to be consistant with other gene traits by using var
 
+/* PY Edit - Trait removal
 /datum/trait/negative/agoraphobia
 	name = "Agoraphobia"
 	desc = "You very much dislike being in crowded places. When in the company of more than two other people, you start to panic and experience adverse effects."
@@ -322,6 +323,7 @@
 	excludes = list(/datum/trait/negative/lonely/major,/datum/trait/negative/agoraphobia)
 	added_component_path = /datum/component/crowd_detection/lonely
 
+
 /datum/trait/negative/lonely/major
 	name = "Major loneliness vulnerability"
 	desc = "You're extremely prone to loneliness! Being alone for extended periods of time causes adverse effects. Most mobs won't be enough to cure this loneliness, you need other social beings."
@@ -335,7 +337,7 @@
 
 	activation_message="You feel like you are in desperate need of company..."
 	primitive_expression_messages=list("Looks up at you pleadingly")
-
+*/
 /datum/trait/negative/endurance_glass // Glass Cannon
 	name = "Glass Endurance"
 	desc = "Your body is very fragile. Reduces your maximum hitpoints to 25. Beware sneezes. You require only 50 damage in total to die, compared to 200 normally. You will go into crit after losing 25 HP, compared to crit at 100 HP."
@@ -521,7 +523,7 @@
 	desc = "Without the protection of darkness or a suit your body quickly begins to break down when exposed to light."
 	cost = -4
 	is_genetrait = TRUE // There is no upside, a neat landmine for genetics
-	hidden = TRUE //Disabled on Virgo
+	hidden = FALSE //Disabled on Virgo - Enabled on Pyraxis
 	can_take = ORGANICS
 	added_component_path = /datum/component/burninlight // Literally just Zaddat, but you don't start with any suit. Good luck.
 
@@ -531,14 +533,14 @@
 	desc = "You have become chemically dependant to any alcoholic drink, and need to regularly consume it or suffer withdrawals."
 	addiction = REAGENT_ID_ETHANOL
 	custom_only = FALSE
-	hidden = TRUE //Disabled on Virgo
+	hidden = FALSE //Disabled on Virgo - Enabled on Pyraxis
 
 /datum/trait/neutral/addiction_bliss
 	name = "Addiction - " + REAGENT_BLISS
 	desc = "You have become chemically dependant to " + REAGENT_BLISS + ", and need to regularly consume it or suffer withdrawals."
 	addiction = REAGENT_ID_BLISS
 	custom_only = FALSE
-	hidden = TRUE //Disabled on Virgo
+	hidden = FALSE //Disabled on Virgo - Enabled on Pyraxis
 
 /datum/trait/neutral/addiction_coffee
 	name = "Addiction - " + REAGENT_COFFEE
@@ -564,21 +566,21 @@
 	desc = "You have become chemically dependant to " + REAGENT_OXYCODONE + ", and need to regularly consume it or suffer withdrawals."
 	addiction = REAGENT_ID_OXYCODONE
 	custom_only = FALSE
-	hidden = TRUE //Disabled on Virgo
+	hidden = FALSE //Disabled on Virgo - Enabled on Pyraxis
 
 /datum/trait/neutral/addiction_painkiller
 	name = "Addiction - Pain Killers"
 	desc = "You have become chemically dependant to " + REAGENT_TRAMADOL + ", and need to regularly consume it or suffer withdrawals."
 	addiction = REAGENT_ID_TRAMADOL
 	custom_only = FALSE
-	hidden = TRUE //Disabled on Virgo
+	hidden = FALSE //Disabled on Virgo - Enabled on Pyraxis
 
 /datum/trait/neutral/addiction_asustenance
 	name = "Unstable Vat Grown Body"
 	desc = "You are chemically dependant to " + REAGENT_ASUSTENANCE + ", and need to regularly consume it or your body decays."
 	addiction = REAGENT_ID_ASUSTENANCE
 	custom_only = FALSE
-	hidden = TRUE //Disabled on Virgo
+	hidden = FALSE //Disabled on Virgo - Enabled on Pyraxis
 
 /datum/trait/negative/unlucky
 	name = "Unlucky"
@@ -597,7 +599,7 @@
 	cost = -5
 	tutorial = "You should avoid disposal bins."
 	is_genetrait = TRUE
-	hidden = TRUE //VOREStation Note: Disabled
+	hidden = FALSE //Disabled on Virgo - Enabled on Pyraxis
 	added_component_path = /datum/component/omen/trait/major
 	excludes = list(/datum/trait/negative/unlucky, /datum/trait/neutral/slip_prone)
 	activation_message= span_cult(span_bold("What a terrible night to have a curse!"))
@@ -749,7 +751,7 @@
 	special_env = TRUE
 	can_take = ORGANICS
 	added_component_path = /datum/component/schizophrenia
-	hidden = TRUE //Disabled on Vorestation
+	hidden = FALSE //Disabled on Virgo - Enabled on Pyraxis
 
 /datum/trait/negative/synth_pain
 	name = "Obligate Pain Simulation"
