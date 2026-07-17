@@ -1,7 +1,6 @@
 /datum/trait/positive
 	category = TRAIT_TYPE_POSITIVE
 
-/* PY Edit - Disable traits
 /datum/trait/positive/speed_fast
 	name = "Haste"
 	desc = "Allows you to move faster on average than baseline."
@@ -12,12 +11,12 @@
 
 	// Traitgenes Replaces /datum/trait/positive/superpower_increaserun, made into a genetrait
 	is_genetrait = TRUE
-	hidden = FALSE
+	hidden = TRUE // PY Edit
 
 	activation_message="Your leg muscles pulsate."
 	primitive_expression_messages=list("dances around.")
 	excludes = list(/datum/trait/positive/unusual_running) // you best not be naruto running in this house
-
+/*
 /datum/trait/positive/unusual_running
 	name = "Unusual Gait"
 	desc = "Your method of running is unorthodox, you move faster when not holding things in your hands."
@@ -833,7 +832,7 @@
 	desc = "Allows you to carry heavy equipment with no slowdown at all."
 	cost = 3
 	var_changes = list("item_slowdown_mod" = 0.0)
-	excludes = list(/*/datum/trait/positive/speed_fast,*//datum/trait/positive/hardy,/datum/trait/positive/hardy_plus) // PY Edit - Remove Haste
+	excludes = list(/datum/trait/positive/speed_fast,/datum/trait/positive/hardy,/datum/trait/positive/hardy_plus)
 
 /datum/trait/positive/bloodsucker_plus
 	name = "Evolved Bloodsucker"

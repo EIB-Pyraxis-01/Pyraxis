@@ -42,7 +42,7 @@ SUBSYSTEM_DEF(rem)
 	)
 
 	var/last_event
-	var/times_fired
+	var/events_fired
 
 /datum/controller/subsystem/rem/Initialize()
 	for(var/path in subtypesof(/datum/rem_event))
@@ -187,6 +187,6 @@ SUBSYSTEM_DEF(rem)
 	if(event_holder.endWhen)
 		addtimer(CALLBACK(event_holder, TYPE_PROC_REF(/datum/event, end)), event_holder.endWhen)
 
-	times_fired++
+	events_fired++
 
 	return TRUE
