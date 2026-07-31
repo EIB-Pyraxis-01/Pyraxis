@@ -1,11 +1,11 @@
 /datum/rem_event/ion_storm
-	min_mode = REM_IRREGULAR
+	min_mode = REM_LOW
 	max_mode = REM_ANOMALOUS
 	departments = list(DEPARTMENT_ENGINEERING)
 	event_path = /datum/event/ionstorm
 
 /datum/rem_event/grubs
-	min_mode = REM_IRREGULAR
+	min_mode = REM_LOW
 	max_mode = REM_UNCONTROLLED
 	departments = list(DEPARTMENT_ENGINEERING)
 	event_path = /datum/event/grub_infestation
@@ -26,21 +26,21 @@
 	extra_value = 10
 
 /datum/rem_event/window_break
-	min_mode = REM_IRREGULAR
+	min_mode = REM_LOW
 	max_mode = REM_ANOMALOUS
 	departments = list(DEPARTMENT_ENGINEERING)
 	event_path = /datum/event/window_break
 	extra_value = 10
 
 /datum/rem_event/comms_blackout
-	min_mode = REM_IRREGULAR
+	min_mode = REM_LOW
 	max_mode = REM_ANOMALOUS
 	departments = list(DEPARTMENT_ENGINEERING)
 	event_path = /datum/event/communications_blackout
 	extra_value = 10
 
 /datum/rem_event/grid_check
-	min_mode = REM_TENSION_RISING
+	min_mode = REM_MEDIUM
 	max_mode = REM_ANOMALOUS
 	departments = list(DEPARTMENT_ENGINEERING)
 	event_path = /datum/event/grid_check

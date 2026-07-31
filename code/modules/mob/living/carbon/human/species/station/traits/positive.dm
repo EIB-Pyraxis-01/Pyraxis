@@ -15,7 +15,7 @@
 
 	activation_message="Your leg muscles pulsate."
 	primitive_expression_messages=list("dances around.")
-	excludes = list(/datum/trait/positive/unusual_running) // you best not be naruto running in this house
+	// excludes = list(/datum/trait/positive/unusual_running) // you best not be naruto running in this house - PY Edit
 /*
 /datum/trait/positive/unusual_running
 	name = "Unusual Gait"

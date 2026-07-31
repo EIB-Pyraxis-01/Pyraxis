@@ -1,5 +1,5 @@
 /datum/rem_event/anomaly
-	min_mode = REM_IRREGULAR
+	min_mode = REM_LOW
 	max_mode = REM_ANOMALOUS
 	departments = list(DEPARTMENT_RESEARCH, DEPARTMENT_ENGINEERING)
 	event_path = /datum/event/anomaly/flux
@@ -29,7 +29,7 @@
 	event_path = /datum/event/anomaly/hallucination
 
 /datum/rem_event/anomaly/pyro
-	min_mode = REM_VOLATILE
+	min_mode = REM_HIGH
 	departments = list(DEPARTMENT_RESEARCH, DEPARTMENT_ENGINEERING)
 	event_path = /datum/event/anomaly/pyro
 

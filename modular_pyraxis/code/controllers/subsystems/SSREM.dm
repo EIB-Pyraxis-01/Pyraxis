@@ -1,7 +1,7 @@
 #define REM_CALM 				1
-#define REM_IRREGULAR			2
-#define REM_TENSION_RISING 		3
-#define REM_VOLATILE			4
+#define REM_LOW					2
+#define REM_MEDIUM 				3
+#define REM_HIGH				4
 #define REM_UNCONTROLLED		5
 #define REM_ANOMALOUS			6
 
@@ -81,11 +81,11 @@ SUBSYSTEM_DEF(rem)
 /datum/controller/subsystem/rem/proc/update_mode()
 	switch(score)
 		if(21 to 50)
-			mode = REM_IRREGULAR
+			mode = REM_LOW
 		if(51 to 90)
-			mode = REM_TENSION_RISING
+			mode = REM_MEDIUM
 		if(91 to 140)
-			mode = REM_VOLATILE
+			mode = REM_HIGH
 		if(141 to 200)
 			mode = REM_UNCONTROLLED
 		if(201 to INFINITY)
@@ -100,16 +100,16 @@ SUBSYSTEM_DEF(rem)
 
 	trigger_event()
 
-	var/delay = rand(15, 20) MINUTES
+	var/delay = rand(20, 25) MINUTES
 
 	switch(mode)
 		if(REM_CALM)
 			delay *= 0.5
-		if(REM_IRREGULAR)
+		if(REM_LOW)
 			delay *= 0.75
-		if(REM_TENSION_RISING)
+		if(REM_MEDIUM)
 			delay *= 1
-		if(REM_VOLATILE)
+		if(REM_HIGH)
 			delay *= 0.8
 		if(REM_UNCONTROLLED)
 			delay *= 0.6
