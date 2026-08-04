@@ -1,5 +1,5 @@
 // Station Command jobs
-#define JOB_SITE_MANAGER "Site Manager"
+#define JOB_SITE_MANAGER "Foreman" // PY Edit - Foreman instead of Captain
 	// Site Manager alt titles
 	#define JOB_ALT_OVERSEER "Overseer"
 	#define JOB_ALT_FACILITY_DIRECTOR "Facility Director"

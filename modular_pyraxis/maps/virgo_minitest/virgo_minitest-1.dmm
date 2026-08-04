@@ -3575,6 +3575,10 @@
 /obj/machinery/ore_silo,
 /turf/simulated/floor/tiled,
 /area/bridge)
+"iF" = (
+/obj/effect/landmark/anomaly,
+/turf/simulated/floor/tiled,
+/area/bridge)
 "iJ" = (
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
@@ -9367,7 +9371,7 @@ fY
 GC
 gf
 gr
-gf
+iF
 gf
 gz
 gf

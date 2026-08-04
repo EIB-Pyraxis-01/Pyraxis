@@ -483,6 +483,7 @@
 	do_animate("opening")
 	icon_state = "door0"
 	set_opacity(0)
+	SSrem.add_activity(DEPARTMENT_ENGINEERING, 1) // PY Edit - REM
 	addtimer(CALLBACK(src, PROC_REF(open_internalsetdensity),forced), anim_length_before_density)
 
 /obj/machinery/door/proc/open_internalsetdensity(forced = 0)

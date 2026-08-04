@@ -49,6 +49,9 @@
 	 */
 	var/list/announce_channels
 
+	var/dangerous = 0 // PY Add - If this research is dangerous, add score to SSRem
+	var/activity = 5 // PY Add - How much department activity does node this add
+
 /datum/techweb_node/error_node
 	id = "ERROR"
 	display_name = "ERROR"
@@ -117,10 +120,17 @@
 ///Proc called when the Station (Science techweb specific) researches a node.
 /datum/techweb_node/proc/on_station_research(atom/research_source)
 	SHOULD_CALL_PARENT(TRUE)
-	// var/channels_to_use = announce_channels
-	// if(length(channels_to_use) && !starting_node)
-	// 	for(var/channel in channels_to_use)
-	// 		GLOB.global_announcer.autosay("Science just researched node \"[display_name]\".", "Science Announcer", channel)
+	// PY Edit - Allow radio messages
+	var/source_dept = "Science"
+	if(istype(research_source, /obj/machinery/computer/rdconsole_tg))
+		var/obj/machinery/computer/rdconsole_tg/console = research_source
+		if(console.filter_department)
+			source_dept = console.filter_department
+	var/channels_to_use = announce_channels
+	if(length(channels_to_use) && !starting_node)
+		for(var/channel in channels_to_use)
+			GLOB.global_announcer.autosay("[source_dept] acquired the license for \"[display_name]\".", "License Announcer", channel)
+	// PY Edit End
 	// if(istype(research_source, /obj/machinery/computer/rdconsole))
 	// 	var/obj/machinery/computer/rdconsole/console = research_source
 	// 	var/obj/item/circuitboard/computer/rdconsole/board = console.circuit

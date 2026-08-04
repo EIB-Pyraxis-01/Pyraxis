@@ -11,12 +11,12 @@
 
 	// Traitgenes Replaces /datum/trait/positive/superpower_increaserun, made into a genetrait
 	is_genetrait = TRUE
-	hidden = FALSE
+	hidden = TRUE // PY Edit
 
 	activation_message="Your leg muscles pulsate."
 	primitive_expression_messages=list("dances around.")
-	excludes = list(/datum/trait/positive/unusual_running) // you best not be naruto running in this house
-
+	// excludes = list(/datum/trait/positive/unusual_running) // you best not be naruto running in this house - PY Edit
+/*
 /datum/trait/positive/unusual_running
 	name = "Unusual Gait"
 	desc = "Your method of running is unorthodox, you move faster when not holding things in your hands."
@@ -29,7 +29,7 @@
 /datum/trait/positive/unusual_running/apply(datum/species/S,mob/living/carbon/human/H)
 	..()
 	ADD_TRAIT(H, UNUSUAL_RUNNING, ROUNDSTART_TRAIT)
-
+*/
 /datum/trait/positive/punchdamage
 	name = "Strong Attacks"
 	desc = "Your unarmed attacks deal more damage. (+5 per attack)"
@@ -119,7 +119,7 @@
 	desc = "Decreases your susceptibility to electric shocks by 50%."
 	cost = 3
 	var_changes = list("siemens_coefficient" = 0.5)
-
+/* PY Edit - Trait remove
 /datum/trait/positive/darksight
 	name = "Darksight"
 	desc = "Allows you to see significantly further in the dark and be 10% more susceptible to flashes."
@@ -137,7 +137,7 @@
 	custom_only = FALSE
 	banned_species = list(SPECIES_TAJARAN, SPECIES_SHADEKIN_CREW, SPECIES_SHADEKIN, SPECIES_XENOHYBRID, SPECIES_VULPKANIN, SPECIES_XENO, SPECIES_XENOCHIMERA, SPECIES_VASILISSAN, SPECIES_WEREBEAST) //These species already have strong darksight by default.
 	excludes = list(/datum/trait/positive/darksight)
-
+*/
 /datum/trait/positive/melee_attack
 	name = "Special Attack: Sharp Melee" // Trait Organization for easier browsing. TODO: Proper categorization of 'health/ability/resist/etc'
 	desc = "Provides sharp melee attacks which can inflict bleeding."
@@ -421,7 +421,7 @@
 	desc = "You are much more resistant to radiation, and it dissipates much faster from your body."
 	cost = 2
 	var_changes = list("radiation_mod" = 0.5, "rad_removal_mod" = 5, "rad_levels" = MAJOR_RESISTANT_RADIATION_RESISTANCE)
-
+/* PY Edit - Remove Traits
 /datum/trait/positive/rad_immune
 	name = "Radiation Immunity"
 	desc = "For whatever reason, be it a more dense build or some quirk of your genetic code, your body is completely immune to radiation."
@@ -433,6 +433,7 @@
 	hidden = FALSE
 	activation_message="Your body feels mundane."
 
+
 /datum/trait/positive/rad_immune/apply(datum/species/S,mob/living/carbon/human/H)
 	..()
 	ADD_TRAIT(H, TRAIT_RADIMMUNE, ROUNDSTART_TRAIT)
@@ -440,7 +441,7 @@
 /datum/trait/positive/rad_immune/unapply(datum/species/S,mob/living/carbon/human/H)
 	..()
 	REMOVE_TRAIT(H, TRAIT_RADIMMUNE, ROUNDSTART_TRAIT)
-
+*/
 /datum/trait/positive/vibration_sense
 	name = "Vibration Sense"
 	desc = "Allows you to sense subtle vibrations nearby, even if the source cannot be seen."
@@ -537,7 +538,7 @@
 	desc = "Allows you to build a cocoon around yourself, using it to transform your body if you desire."
 	cost = 0
 	category = 0
-
+/* PY Edit - HATE HATE HATE HATE
 /datum/trait/positive/virus_immune
 	name = "Virus Immune"
 	desc = "You are immune to viruses."
@@ -545,7 +546,7 @@
 
 	can_take = ORGANICS
 	var_changes = list("virus_immune" = TRUE)
-
+*/
 /datum/trait/positive/linguist/master
 	name = "Master Linguist"
 	desc = "You are a master of languages! For whatever reason you might have, you are able to learn many more languages than others. Your language cap is 12 slots."
@@ -926,7 +927,7 @@
 	"glow_enabled" = list(TRAIT_PREF_TYPE_BOOLEAN, "Glow enabled on spawn", TRAIT_NO_VAREDIT_TARGET, FALSE))
 
 	added_component_path = /datum/component/radiation_effects
-	excludes = list(/datum/trait/neutral/glowing_radiation, /datum/trait/positive/rad_resistance, /datum/trait/positive/rad_resistance_extreme, /datum/trait/positive/rad_immune, /datum/trait/negative/rad_weakness)
+	excludes = list(/datum/trait/neutral/glowing_radiation, /datum/trait/positive/rad_resistance, /datum/trait/positive/rad_resistance_extreme, /*/datum/trait/positive/rad_immune, *//datum/trait/negative/rad_weakness) // PY Edit - Remove Immune
 
 /datum/trait/positive/radioactive_heal/apply(datum/species/S,mob/living/carbon/human/H, list/trait_prefs)
 	..()

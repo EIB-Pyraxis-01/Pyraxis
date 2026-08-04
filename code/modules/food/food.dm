@@ -40,6 +40,8 @@
 		src.pixel_y = rand(-6.0, 6)
 	AddElement(/datum/element/sellable/food_snack)
 
+	AddComponent(/datum/component/germ_sensitive) // PY Edit - Germ sensitive
+
 /obj/item/reagent_containers/food/attackby(obj/item/W, mob/user)
 	. = ..()
 	attempt_changeling_test(W,user)

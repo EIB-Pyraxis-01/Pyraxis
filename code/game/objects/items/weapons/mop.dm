@@ -36,6 +36,7 @@ GLOBAL_LIST_BOILERPLATE(all_mops, /obj/item/mop)
 			if(T)
 				T.wash(CLEAN_SCRUB)
 				reagents.trans_to_turf(T, 1, 10)
+				SSrem.add_activity(DEPARTMENT_CIVILIAN, 1) // PY Edit - REM
 			user.balloon_alert(user, "you have finished mopping!")
 
 

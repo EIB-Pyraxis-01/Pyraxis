@@ -36,7 +36,7 @@ GLOBAL_LIST_INIT(bibleitemstates, list(
 	use_sound = 'sound/bureaucracy/bookopen.ogg'
 	drop_sound = 'sound/bureaucracy/bookclose.ogg'
 	special_handling = TRUE
-
+/* PY Edit - Just a book
 /obj/item/storage/bible/attack_self(mob/living/carbon/human/user)
 	. = ..(user)
 	if(.)
@@ -89,7 +89,7 @@ GLOBAL_LIST_INIT(bibleitemstates, list(
 	if(user.mind.assigned_role != JOB_CHAPLAIN)
 		return FALSE
 	return TRUE
-
+*/
 /obj/item/storage/bible/booze
 	name = "bible"
 	desc = "To be applied to the head repeatedly."

@@ -68,6 +68,11 @@
 		if("vinestart")
 			GLOB.vinestart += loc
 			delete_me = TRUE
+		// PY Edit Start - Anom Items
+		if("anomalystart")
+			GLOB.anomalystart += loc
+			delete_me = TRUE
+		// PY End - Anom Items
 
 	if(delete_me)
 		return INITIALIZE_HINT_QDEL

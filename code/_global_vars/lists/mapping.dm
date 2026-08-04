@@ -67,3 +67,4 @@ GLOBAL_LIST_EMPTY(eventdestinations) // List of scatter landmarks for VOREStatio
 GLOBAL_LIST_EMPTY(eventabductors) // List of scatter landmarks for VOREStation abductor portals
 
 GLOBAL_LIST_EMPTY(bslockers) // List of (roundstart) bluespace lockers
+GLOBAL_LIST_EMPTY(anomalystart) // PY Add - Turfs where anomaly things spawn
