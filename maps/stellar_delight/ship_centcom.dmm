@@ -488,7 +488,7 @@
 /obj/machinery/door/blast/regular{
 	dir = 4
 	},
-/turf/simulated/wall/r_wall,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/centcom/terminal)
 "bu" = (
 /obj/structure/sign/warning{
