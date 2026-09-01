@@ -662,6 +662,12 @@
 /obj/item/storage/firstaid/fire,
 /turf/simulated/floor/tiled/dark,
 /area/centcom/specops)
+"bN" = (
+/obj/machinery/door/blast/regular{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/centcom/terminal)
 "bP" = (
 /turf/simulated/floor/tiled/eris/dark/cargo,
 /area/shuttle/ccboat)
@@ -25801,7 +25807,7 @@ ZQ
 ZQ
 ZQ
 ZQ
-bt
+bN
 Ok
 Ok
 Ok
@@ -25943,7 +25949,7 @@ ZQ
 ZQ
 ZQ
 ZQ
-bt
+bN
 CW
 CW
 Dc
@@ -25971,7 +25977,7 @@ Dc
 jQ
 CW
 CW
-bt
+bN
 ZQ
 ZQ
 ZQ
@@ -26085,7 +26091,7 @@ ZQ
 ZQ
 ZQ
 ZQ
-bt
+bN
 CW
 CW
 Dc
@@ -26113,7 +26119,7 @@ nz
 Dc
 CW
 CW
-bt
+bN
 ZQ
 ZQ
 ZQ
@@ -26227,7 +26233,7 @@ ZQ
 ZQ
 ZQ
 ZQ
-bt
+bN
 eX
 eX
 Dc
@@ -26255,7 +26261,7 @@ XZ
 Dc
 eX
 eX
-bt
+bN
 ZQ
 ZQ
 ZQ
@@ -26369,7 +26375,7 @@ ZQ
 ZQ
 ZQ
 ZQ
-bt
+bN
 CW
 CW
 Dc
@@ -26397,7 +26403,7 @@ XZ
 Dc
 CW
 CW
-bt
+bN
 ZQ
 ZQ
 ZQ
@@ -26511,7 +26517,7 @@ ZQ
 ZQ
 ZQ
 ZQ
-bt
+bN
 CW
 CW
 GN
@@ -26539,7 +26545,7 @@ BM
 Dc
 CW
 CW
-bt
+bN
 ZQ
 ZQ
 ZQ
@@ -26653,7 +26659,7 @@ bp
 bp
 bp
 ZQ
-bt
+bN
 CW
 CW
 GN
@@ -26681,7 +26687,7 @@ iO
 Dc
 CW
 CW
-bt
+bN
 ZQ
 ZQ
 ZQ
@@ -26795,7 +26801,7 @@ tw
 nQ
 bp
 ZQ
-bt
+bN
 CW
 CW
 GN
@@ -26823,7 +26829,7 @@ ZU
 Dc
 CW
 CW
-bt
+bN
 ZQ
 ZQ
 ZQ
@@ -26937,7 +26943,7 @@ dh
 dh
 bp
 ZQ
-bt
+bN
 CW
 CW
 Dc
@@ -26965,7 +26971,7 @@ XZ
 Dc
 CW
 CW
-bt
+bN
 ZQ
 ZQ
 ZQ
@@ -27079,7 +27085,7 @@ AO
 oC
 bp
 ZQ
-bt
+bN
 eX
 eX
 Dc
@@ -27107,7 +27113,7 @@ XZ
 Dc
 eX
 eX
-bt
+bN
 ZQ
 ZQ
 ZQ
@@ -27221,7 +27227,7 @@ bp
 bp
 bp
 ZQ
-bt
+bN
 CW
 CW
 Dc
@@ -27249,7 +27255,7 @@ nz
 Dc
 CW
 CW
-bt
+bN
 ZQ
 ZQ
 ZQ
@@ -27363,7 +27369,7 @@ ZQ
 ZQ
 ZQ
 ZQ
-bt
+bN
 CW
 CW
 Dc
@@ -27391,7 +27397,7 @@ Dc
 Dc
 CW
 CW
-bt
+bN
 ZQ
 ZQ
 ZQ
@@ -27505,7 +27511,7 @@ ZQ
 ZQ
 ZQ
 ZQ
-bt
+bN
 Kd
 Kd
 Kd
@@ -27533,7 +27539,7 @@ sB
 Kd
 Kd
 Kd
-bt
+bN
 ZQ
 ZQ
 ZQ
