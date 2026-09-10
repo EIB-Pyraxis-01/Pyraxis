@@ -3,6 +3,7 @@
 	temp_low = 243.15 // -30C
 	temp_high = 253.15 // -20C
 	icon = 'modular_pyraxis/icons/effects/weather.dmi'
+	var/limits_vision = FALSE
 
 /datum/weather_holder/pyraxis
 	temperature = TN60C

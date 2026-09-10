@@ -16,6 +16,8 @@
 	outdoor_sounds_type = /datum/looping_sound/weather/outside_blizzard
 	indoor_sounds_type = /datum/looping_sound/weather/inside_blizzard
 
+	limits_vision = TRUE
+
 
 /datum/weather/pyraxis/blizzard/New()
 	switch(GLOB.world_time_season)
