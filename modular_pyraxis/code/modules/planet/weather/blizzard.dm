@@ -53,6 +53,6 @@
 			)
 	. = ..()
 
-/datum/weather/pyraxis/snow/process_effects()
+/datum/weather/pyraxis/blizzard/process_effects()
 	..()
 	snow_effect(40)

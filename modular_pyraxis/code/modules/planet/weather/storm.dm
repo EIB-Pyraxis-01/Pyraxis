@@ -61,7 +61,7 @@
 			)
 	. = ..()
 
-/datum/weather/sif/storm/planet_effect(mob/living/L)
+/datum/weather/pyraxis/storm/planet_effect(mob/living/L)
 	if(L.z in holder.our_planet.expected_z_levels)
 		var/turf/T = get_turf(L)
 		if(!T.is_outdoors())

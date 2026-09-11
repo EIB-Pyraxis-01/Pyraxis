@@ -208,6 +208,8 @@
 
 	VAR_PROTECTED/color_grading = null // Color blending for weather to feel hotter, colder, or stranger
 
+	var/limits_vision = FALSE // PY Add - Vision limiting
+
 /datum/weather/New()
 	if(outdoor_sounds_type)
 		outdoor_sounds = new outdoor_sounds_type(list(), FALSE, TRUE)

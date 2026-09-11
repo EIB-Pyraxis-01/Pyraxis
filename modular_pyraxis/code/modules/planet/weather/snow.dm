@@ -1,4 +1,4 @@
-/datum/weather/virgo4/snow
+/datum/weather/pyraxis/snow
 	name = "moderate snow"
 	icon_state = "snowfall_med"
 	wind_high = 2

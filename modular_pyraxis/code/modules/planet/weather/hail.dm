@@ -80,6 +80,6 @@
 		if(show_message)
 			to_chat(H, effect_message)
 
-/datum/weather/pyraxis/snow/process_effects()
+/datum/weather/pyraxis/hail/process_effects()
 	..()
 	snow_effect(75)
