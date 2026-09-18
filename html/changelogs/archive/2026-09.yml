@@ -110,3 +110,6 @@
   - bugfix: radiation sources that qdel before processing their radiation pulse would
       lock up radiation subsystem
   - code_imp: Radiation debug object
+2026-09-18:
+  Will:
+  - code_imp: Fixes SDMM should_not_sleep issue on compile
