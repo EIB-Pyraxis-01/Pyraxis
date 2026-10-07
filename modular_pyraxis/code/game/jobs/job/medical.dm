@@ -130,7 +130,6 @@
 	title = JOB_ALT_CORONER
 	title_blurb = "A " + JOB_ALT_CORONER + " generally works around the dead, focusing on determining the causes of their untimely demises alongside their general handling. They still are fully medical professionals."
 
-/*
 //////////////////////////////////
 //			Chemist
 //////////////////////////////////
@@ -229,7 +228,7 @@
 	title_blurb =  "A " + JOB_ALT_PSYCHOTHERAPIST + " provides mental health services to crew members in need, focusing more on therapy than medication. They may also be \
 					called upon to determine whatever ails the mentally unwell, frequently under Security supervision."
 	title_outfit = /datum/decl/hierarchy/outfit/job/medical/psychiatrist/psychologist
-*/
+
 //////////////////////////////////
 //			Paramedic
 //////////////////////////////////
